@@ -1,0 +1,125 @@
+html{
+    height: 100%;
+    background-image: linear-gradient(bottom, rgb(209,0,0) 0%, rgb(120,4,4) 50%, rgb(255,0,0) 98%);
+    background-image: -o-linear-gradient(bottom, rgb(209,0,0) 0%, rgb(120,4,4) 50%, rgb(255,0,0) 98%);
+    background-image: -moz-linear-gradient(bottom, rgb(209,0,0) 0%, rgb(120,4,4) 50%, rgb(255,0,0) 98%);
+    background-image: -webkit-linear-gradient(bottom, rgb(209,0,0) 0%, rgb(120,4,4) 50%, rgb(255,0,0) 98%);
+    background-image: -ms-linear-gradient(bottom, rgb(209,0,0) 0%, rgb(120,4,4) 50%, rgb(255,0,0) 98%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(209,0,0)),
+        color-stop(0.5, rgb(120,4,4)),
+        color-stop(0.98, rgb(255,0,0))
+        );
+	background-color: red;
+	    cursor: default; 
+}
+body {
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.infiniteButton, .obstaclesButton, .walls, .start, .themeSelector, h1, #retry, #backToMenu{
+    cursor: pointer;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+
+.startMenu{
+    position:fixed;
+    top: 300px;
+    left: 300px;
+    background-color: black;
+    color:white;
+    width: 200px;
+    height:auto;
+}
+.gameOver{
+    display: none;
+    position:fixed;
+    top: 300px;
+    left: 300px;
+    background-color: black;
+    color:white;
+    width: 200px;
+    height:auto;
+}
+
+#game{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#gamePad{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 220px;
+    overflow: hidden;
+    border: solid 1px #94b8d6;
+    position: relative;
+    border-top: none;
+    border-bottom: none;   
+	background-image: url(../assets/gridMain.png);
+}
+.snake, #snakeHead{
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    position: absolute;
+
+}
+
+#snakeHead{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+#fruit{
+    height: 20px;
+    width: 20px;
+    background-color: #FF320D;
+    margin: 0px;
+    position: relative;
+}
+
+.obs{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    position: absolute;;
+
+}
+
+#scoreBoard{
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: #666;
+    -webkit-border-bottom-left-radius: 30px;
+    -moz-border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+    -moz-border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#scoreBoard p {
+    font-size: 25px;
+    margin: auto;
+}
+
+h1{
+    font-family: monoton;
+    font-size: 90px;
+    padding: 0px;
+    margin: 0px;
+}

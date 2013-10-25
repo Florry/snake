@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Snake</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link id="currentCss" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h1>Snake</h1>
+    <div id="game">
+        <div id="gamePad">
+            <div id="fruit"></div>
+            <div id="snakeHead"></div>
+            <div id="snakes"></div>
+            <div id="obstacles"></div>
+        </div>
+        <div id="scoreBoard">
+            <p>
+                Score: <span class="score">0</span><br/>
+                Highscore: <span class="highscore">0</span>
+            </p>
+        </div>
+        <div class="gameOver">
+            <p>Game Over! <br/>
+                Score: <span class="score"></span><br/>
+                <span id="retry">Retry?</span> <span class="devider">|</span> <span id="backToMenu">Back to menu</span></p>
+            </div>
+        </div>
+
+        <div id="startMenu">
+            <ul>
+                <li class="start">Start Game</li>
+                <br/>
+                <span class="options">
+                    <li class="infiniteButton">Infinite levels: <span class="infinite">Off</span></li>
+                    <li class="obstaclesButton">Obstacles: <span class="obsSetting">Off</li>
+                    <li class="themeSelector" id="themeButton">Current Theme: <span class="currentTheme">default</span></li><br/>
+                    <li><input id="wallWidth" type="text"></input> blocks wide</li>
+                    <li><input id="wallHeight"type="text"></input> blocks tall</li>
+                </span>
+            </ul>
+        </div>
+
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="js/snake.js"></script>
+        <script src="js/snake.logic.js"></script>
+        <script src="js/snake.game.js"></script>
+        <script src="js/snake.gui.js"></script>
+        <script src="js/snake.input.js"></script>
+    </body>
+    </html>

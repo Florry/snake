@@ -1,0 +1,196 @@
+html{
+    height: 100%;
+    background-color: #0d395d;
+	background-image: none;
+    color:#94b8d6;
+	font-family: 'Fredericka the Great', cursive;
+    font-size: 18px;
+
+    }
+body {
+    height: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+    text-shadow: 1px 1px 1px black;
+}
+
+a {
+    color:#94b8d6;
+    text-decoration: none;
+}
+
+input{
+    width: 50px;
+    font-family: 'Fredericka the Great', cursive;
+    font-size:30px;
+    background: #0d395d;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border: 0px solid;
+    padding-left: 10px; 
+    box-shadow:5px 5px 10px 0px  rgba(0,0,0,0.1) inset;  
+ }
+
+ input:hover{
+    background-color: #0f426d;
+ }
+
+ textarea:focus, input:focus{
+    outline: 0;
+    background-color: #0f426d;
+}
+
+.obs{
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    position: absolute;
+    background-image: url(../assets/retro/block01.png);
+}
+
+#startMenu{
+    width: auto;
+    height: auto;
+    background-color: #125084;
+    color:#94b8d6;
+    border: solid 1px #94b8d6;
+    margin-top: -17px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    background-image: url(../assets/retro/pattern02.png);
+    background-repeat: repeat-y;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.menuItem{
+    background-color:#125084;
+    padding: 10px;
+    text-shadow: 1px 1px 1px black;
+    filter: dropshadow(color=black, offx=1, offy=1);
+}
+.infiniteButton, .obstaclesButton, .walls, #startMenu{
+    text-shadow: 1px 1px 1px black;
+    filter: dropshadow(color=black, offx=1, offy=1);
+}
+
+.obsSetting, .infinite, .currentTheme, .score, .highscore{
+    color:white;
+}
+
+.obsSetting:hover, .infinite:hover, .currentTheme:hover, #retry:hover, #backToMenu:hover, .start:hover{
+    color:#cf3b53;
+}
+
+#gamePad{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 220px;
+    background-color: #1764a4;
+    background-image: url(../assets/retro/grid.png);
+    overflow: hidden;
+    border: solid 1px #94b8d6;
+    position: relative;
+    border-bottom: none;   
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+.snake, #snakeHead{
+    height: 20px;
+    width: 20px;
+    background-color: #94b8d6;
+    position: absolute;
+    margin: 0px;
+    background-image: url(../assets/retro/pattern01.png)
+}
+#snakeHead{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#fruit{
+    background-image: url(../assets/retro/apple.png);
+    height: 20px;
+    width: 20px;
+    margin: 0px;
+    position: relative;
+    background-color: transparent;
+
+}
+
+#scoreBoard, .gameOver{
+    float: left;
+    width: 100%;
+    height: 90px;
+    background-color: #125084;
+    border: solid 1px #94b8d6;
+    text-shadow: 1px 1px 1px black;
+    filter: dropshadow(color=black, offx=1, offy=1);
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+        background-image: url(../assets/retro/pattern02.png);
+    background-repeat: repeat-y;
+
+}
+#scoreBoard p {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.gameOver{
+
+    display: none;
+    position:relative;
+    top: auto;
+    left: auto;
+	margin-left: auto;
+	margin-right:auto;
+    background-color: #125084;
+    color:#94b8d6;
+    width: 380px;
+    height:auto;
+    border: solid 1px #94b8d6;
+    border-top: none;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    margin-top: -91px;
+	padding-bottom: none;
+	margin-bottom: none;
+}
+.gameOver p {
+    margin-left: 20px;
+	margin-top: 6px;
+	font-size: 25px;
+	padding-bottom: none;
+	margin-bottom: none;	
+}
+
+
+h1{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 90px;
+    color: white;
+    font-weight:normal;
+
+}
+
+
+#retry, #backToMenu{
+    color:white;
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+    /*font-size: 15px;*/
+}
+
+.start{
+    font-size: 36px;
+    list-style-type: none;
+    color: white;
+}
